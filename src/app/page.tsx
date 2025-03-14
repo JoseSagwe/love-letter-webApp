@@ -3,12 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-import { Heart, Sparkles, Mail, Star, Gift, Music, Coffee, Cake, Moon, Phone, Camera } from 'lucide-react';
-
-const Confetti = dynamic(() => 
-  import('canvas-confetti').then(mod => ({ default: mod.default })),
-  { ssr: false }
-);
+import { Heart, Sparkles, Mail, Star, Gift, Music, Coffee, Cake, Moon } from 'lucide-react';
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -360,7 +355,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-2xl font-bold text-pink-600 mb-4">My Dearest Babe,</h2>
                 <p className="text-gray-700 mb-3">
-                  From the moment we met, you've filled my life with colors I never knew existed.
+                  From the moment we met, you&apos;ve filled my life with colors I never knew existed.
                 </p>
                 <p className="text-gray-700 mb-3">
                   Your smile lights up even my darkest days, and your laugh is my favorite melody.
@@ -522,7 +517,7 @@ export default function Home() {
                 transition={{ delay: 0.8 }}
                 className="text-gray-700 mb-8 text-center px-4 font-medium"
               >
-                Every moment with you is a treasure. These memories we've created are just the beginning of our beautiful story. I can't wait to make countless more with you, my love. ✨
+                Every moment with you is a treasure. These memories we&apos;ve created are just the beginning of our beautiful story. I can&apos;t wait to make countless more with you, my love. ✨
               </motion.p>
               
               <motion.button
