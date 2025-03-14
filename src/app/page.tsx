@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import dynamic from "next/dynamic";
 import { Heart, Sparkles, Mail, Star, Gift, Music, Coffee, Cake, Moon } from 'lucide-react';
 
 export default function Home() {
